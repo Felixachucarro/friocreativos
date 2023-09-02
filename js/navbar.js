@@ -5,7 +5,7 @@ window.addEventListener('scroll', function() {
 
     if (window.scrollY >= 150) { // Se cambió el valor a 150 píxeles
       navbar.classList.add('scroll');
-      logo.src = 'imagenes/iso.png'; // Cambia la ruta de la imagen del logo al hacer scroll
+      logo.src = 'imagenes/css.png'; // Cambia la ruta de la imagen del logo al hacer scroll
     } else {
       navbar.classList.remove('scroll');
       logo.src = 'imagenes/friologo.png'; // Vuelve a la imagen original cuando se encuentra en la parte superior
