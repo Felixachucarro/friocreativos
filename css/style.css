@@ -82,7 +82,7 @@ a:hover{
 
 .subtitle a:active, a:hover{
   color: black;
-  border-bottom: 1px rgb(255, 168, 168) solid;
+  
   transition: 1,2s;
   
   
@@ -342,7 +342,15 @@ letter-spacing: 2px;
 }
 
 .navbar-toggler-icon:hover{
- 
+  background-image: url(/imagenes/invert.png);
+  filter: invert();
   right: 5%;
   bottom: 50%;
+}
+
+
+@media (max-width: 750px) {
+  .ocul{
+    display: none;
+  }
 }

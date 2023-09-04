@@ -11,3 +11,6 @@ window.addEventListener('scroll', function() {
       logo.src = 'imagenes/friologo.png'; // Vuelve a la imagen original cuando se encuentra en la parte superior
     }
   });
+
+
+  
