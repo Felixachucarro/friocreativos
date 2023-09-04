@@ -1,16 +1,25 @@
 
+
+
 window.addEventListener('scroll', function() {
     var navbar = document.querySelector('.navbar');
     var logo = document.querySelector('.navbar .logo');
 
-    if (window.scrollY >= 150) { // Se cambió el valor a 150 píxeles
-      navbar.classList.add('scroll');
-      logo.src = 'imagenes/invert.png'; // Cambia la ruta de la imagen del logo al hacer scroll
+    if (window.scrollY >= 150) {
+        navbar.classList.add('scroll');
+        logo.src = 'imagenes/invert.png';
     } else {
-      navbar.classList.remove('scroll');
-      logo.src = 'imagenes/friologo.png'; // Vuelve a la imagen original cuando se encuentra en la parte superior
+        navbar.classList.remove('scroll');
+        logo.src = 'imagenes/friologo.png';
     }
-  });
+});
 
+const image = document.querySelector('.image'); // Selecciona la imagen por su clase "image"
 
-  
+image.addEventListener('mouseenter', () => {
+    image.src = 'imagenes/favicon.png'; // Cambia la imagen al hacer hover
+});
+
+image.addEventListener('mouseleave', () => {
+    image.src = 'imagenes/friologo.png'; // Restaura la imagen original al quitar el mouse
+});
