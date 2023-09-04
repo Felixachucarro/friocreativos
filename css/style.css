@@ -387,3 +387,10 @@ letter-spacing: 2px;
     display: block!important;
 }
 }
+
+.image {
+  width: 90px;
+  height: auto;
+  filter: invert();
+  transition: src 2s ease; /* Agrega la transición a la propiedad "src" */
+}
