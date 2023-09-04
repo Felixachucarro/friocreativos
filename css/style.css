@@ -371,3 +371,6 @@ letter-spacing: 2px;
   }
 }
 
+.navbar-toggler.container{
+  border: none!important;
+}
