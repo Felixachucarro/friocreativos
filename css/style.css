@@ -336,13 +336,13 @@ letter-spacing: 2px;
 }
 
 .navbar-toggler-icon{
-  position: absolute;
+ 
   right: 5%;
   bottom: 50%;
 }
 
 .navbar-toggler-icon:hover{
-  position: absolute;
+ 
   right: 5%;
   bottom: 50%;
 }
