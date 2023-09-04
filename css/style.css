@@ -374,3 +374,10 @@ letter-spacing: 2px;
 .navbar-toggler.container{
   border: none!important;
 }
+
+@media (max-width: 750px) {
+.navbar.scroll .logo {
+  width: 60px;
+  margin-top: -8%;
+}
+}
