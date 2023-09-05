@@ -1,6 +1,7 @@
 html{
   scroll-behavior: smooth;
   
+  
 }
 
 h1,h2,h3,h4,h5,h6,p{
@@ -393,4 +394,41 @@ letter-spacing: 2px;
   height: auto;
   filter: invert();
   transition: src 2s ease; /* Agrega la transición a la propiedad "src" */
+}
+
+
+input{
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 2%;
+}
+
+.button-pregunta{
+    background-color: black;
+    color: white;
+    padding: 2%;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px!important;
+}
+.button-pregunta:hover{
+  background-color: #2a2a2a;
+}
+
+.chat{
+    background-color: grey;
+    border-radius: 5px;
+    padding: 2%;
+    color: white;
+}
+
+.bot-personaje{
+    width: 100px;
+    height: 200px;
+    background-image: url(https://elementos.entornos.net/Cursos+Demo+Contenidos/bot/bot-1.png);
+    background-size: cover;
+}
+
+.bot-personaje:hover{
+    background-image: url(https://elementos.entornos.net/Cursos+Demo+Contenidos/bot/bot-2.png);
 }
