@@ -334,9 +334,6 @@ letter-spacing: 2px;
   transition-duration: 0.7s;
 }
 
-.btn-default:active{
-
-}
 
 .navbar-toggler-icon{
  
@@ -348,9 +345,7 @@ letter-spacing: 2px;
 
 
 @media (max-width: 750px) {
-  .ocul{
-    
-  }
+ 
 }
 
 @media (max-width: 750px) {
