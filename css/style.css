@@ -69,14 +69,14 @@ a:hover{
 .navbar{
   border-bottom: 2px rgb(255, 255, 255) solid;
   height: 100px;
-  border-top: rgb(20, 20, 20) 2px solid;
+  
   background-color: white!important;
   
 }
 
 .navbar a{
   
-  font-weight: 100;
+  font-weight: 600;
   margin-left: 2%;
   
 }
@@ -103,16 +103,18 @@ a:hover{
 .navbar.scroll {
  
   transition: all 1s ease;
-  
-  
-  
+  border-bottom: none;
+  background-color: rgba(245, 245, 220, 0.07)!important;
+
   
 }
 
-.navbar.scroll .ocultado {
-  
-  
+.navbar.scroll a{
+color:#2a2a2a;
+
 }
+
+
 
 /* Estilo del logo después de hacer scroll */
 .navbar.scroll .logo {
@@ -392,7 +394,7 @@ letter-spacing: 2px;
 .image {
   width: 90px;
   height: auto;
-  filter: invert();
+  
   transition: src 2s ease; /* Agrega la transición a la propiedad "src" */
 }
 

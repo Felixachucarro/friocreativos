@@ -1,0 +1,32 @@
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilo para los campos de entrada de texto */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    
+    border: 1px solid #161616;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo para el botón de envío */
+input[type="submit"] {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Estilo para el botón de envío al pasar el cursor por encima */
+input[type="submit"]:hover {
+    background-color: #1d1d1d;
+}

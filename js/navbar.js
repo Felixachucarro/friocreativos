@@ -7,7 +7,7 @@ window.addEventListener('scroll', function() {
 
     if (window.scrollY >= 150) {
         navbar.classList.add('scroll');
-        logo.src = 'imagenes/invert.png';
+        logo.src = 'imagenes/logo-ond.png';
     } else {
         navbar.classList.remove('scroll');
         logo.src = 'imagenes/friologo.png';
@@ -17,7 +17,7 @@ window.addEventListener('scroll', function() {
 const image = document.querySelector('.image'); // Selecciona la imagen por su clase "image"
 
 image.addEventListener('mouseenter', () => {
-    image.src = 'imagenes/favicon.png'; // Cambia la imagen al hacer hover
+    image.src = 'imagenes/logo-ond.png'; // Cambia la imagen al hacer hover
 });
 
 image.addEventListener('mouseleave', () => {
