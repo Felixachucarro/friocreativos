@@ -67,10 +67,10 @@ a:hover{
     
   }
 .navbar{
-  border-bottom: 2px rgb(255, 255, 255) solid;
+  border-bottom: 2px rgba(255, 255, 255, 0) solid;
   height: 100px;
   
-  background-color: white!important;
+  background-color: rgba(255, 255, 255, 0)!important;
   
 }
 
@@ -163,6 +163,9 @@ color:#2a2a2a;
 margin-left: 10%;
 }
 
+.mb-10{
+  margin-bottom: 10%;
+}
 
 #ache::after {
   content: "";
@@ -300,10 +303,35 @@ margin-left: 10%;
 
 
 .fondo-subte{
-  background-image: url('/imagenes/fondo-subte.jpg');
+  background-image: url('/imagenes/FRIO.png');
   background-size: cover;
-  height: 600px;
+  background-repeat: no-repeat;
+  height: 700px;
+  border-bottom: 15px solid #478F8E;
 
+}
+
+.fondo-subte::before {
+  content: "";
+  position: absolute;
+  top: 30;
+  right: 0;
+  width: 60%;
+  height: 60%;
+  background-image: url('/imagenes/circle.png');
+  background-repeat: no-repeat;
+  background-size: contain; /* Ajusta el tamaño del círculo según sea necesario */
+  animation: rotate 15s linear infinite; /* Rotación gradual durante 10 segundos */
+  z-index: -1; /* Coloca el elemento pseudoelemento detrás del contenido del contenedor */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .fondo-ciudad{
@@ -429,3 +457,67 @@ input{
 .bot-personaje:hover{
     background-image: url(https://elementos.entornos.net/Cursos+Demo+Contenidos/bot/bot-2.png);
 }
+
+
+#constructionModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  padding: 5%;
+  text-align: center;
+}
+
+#constructionModal::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: #181717;
+  background-size: cover;
+  z-index: 1200;
+  
+
+}
+
+
+.modal{
+  width: 500px;
+  height: 500px;
+}
+
+.modal .modal-content{
+  padding: 2%;
+ 
+}
+
+.close-button {
+  cursor: pointer;
+  background-color: #2a2a2a;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: center; /* Centra el texto horizontalmente */
+  line-height: 20px; /* Centra el texto verticalmente */
+}
+
+.close-button:hover {
+  background-color: #181717;
+  transition: ease-in 0.2s;
+}
+
+
+.alert-img img{
+  width: 70px;
+  
+  padding: 2%;
+  
+  
+}
+
+
