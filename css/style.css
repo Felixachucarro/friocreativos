@@ -353,6 +353,16 @@ margin-left: 10%;
   margin-top: 20%;
 }
 
+.texto-inicio h2{
+  font-size: 4em;
+}
+
+@media (max-width: 750px) {
+  .texto-inicio h2{
+    font-size: 1em;
+  }
+}
+
 
 
 
@@ -380,9 +390,7 @@ letter-spacing: 2px;
 
 
 
-@media (max-width: 750px) {
- 
-}
+
 
 @media (max-width: 750px) {
   .navbar-nav {
@@ -529,3 +537,46 @@ input{
 }
 
 
+
+/* Estilos generales para la barra de navegación */
+.barra-de-nav {
+  display: none; /* Inicialmente oculto en escritorio */
+}
+
+.barra-de-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #333; /* Color de fondo de la barra de navegación */
+  padding: 10px 0; /* Espacio interno en la barra de navegación */
+  position: fixed;
+  bottom: 2%;
+  left: 20%;
+  border-radius: 5px;
+}
+
+.barra-de-nav ul li a:hover{
+  color: #478f8e;
+}
+
+.barra-de-nav li {
+  margin: 0 15px; /* Espacio entre los elementos de navegación */
+}
+
+.barra-de-nav a {
+  text-decoration: none;
+  color: white; /* Color del texto de los enlaces */
+  font-weight: bold;
+}
+
+/* Media query para mostrar la barra de navegación en dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .barra-de-nav {
+      display: block; /* Mostrar en dispositivos móviles */
+  }
+  
+  .barra-de-nav ul {
+      justify-content: space-around; /* Espaciado uniforme en móviles */
+  }
+}
