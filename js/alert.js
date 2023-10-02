@@ -10,4 +10,4 @@ function closeModal() {
 }
 
 // Mostrar el modal al cargar la página (puedes ajustar el tiempo)
-setTimeout(openModal, 2000); // Mostrar después de 2 segundos
+setTimeout(openModal, 4000); // Mostrar después de 2 segundos
