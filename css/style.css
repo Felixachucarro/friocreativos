@@ -609,3 +609,28 @@ input{
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+.ho:hover{
+  transition: ease-in-out 1.2s;
+  filter:grayscale(9);
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .query-desktop {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .query {
+      display: block;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .query {
+      display: none;
+  }
+}
