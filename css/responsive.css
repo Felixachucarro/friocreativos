@@ -1,0 +1,39 @@
+.imagen-chica{
+    position: absolute;
+    top: 50%;
+    width: 120%;
+    object-fit: contain;
+    border-bottom: 14px solid cadetblue;
+}
+
+.rotary-circle img{
+    animation: rotate 15s linear infinite; 
+    position: absolute;
+    top: 60%;
+    width: 80%;
+    z-index: -2;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Limita el ancho máximo del contenido interno */
+.container-content {
+    max-width: 100%; /* o el valor que desees */
+    margin: 0 auto; /* Para centrar el contenido en la pantalla */
+}
+
+.circle{
+    position: relative;
+    background-image: url(/imagenes/circle.jpg);
+    border-radius: 50%;
+    object-fit:fill;
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
