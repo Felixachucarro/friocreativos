@@ -41,32 +41,80 @@
     </div>
 
     <div style="width: 100%; height: 100%; position: relative; background: white">
-        <img style="width: 533px; height: 533px; left: -36px; top: 252px; position: absolute" src="imagenes/circle.png" />
+        <img style="width: 533px; height: 533px; left: -36px; top: 252px; position: absolute; animation: rotate 15s linear infinite;" src="imagenes/circle.png" />
         <img style="width: 696px; height: 804px; left: -36px; top: 79px; position: absolute" src="imagenes/FRIO.png" />
         
         
-        <div style="width: 206px; height: 44px; left: -14px; top: 720px; position: absolute; text-align: right; color: #22475C; font-size: 25px; font-family: Roboto Flex; font-weight: 863; text-transform: uppercase; word-wrap: break-word">NOSOTROS</div>
-        <div style="width: 192px; height: 20px; left: 17px; top: 762px; position: absolute; text-align: right; color: #22475C; font-size: 25px; font-family: Roboto Flex; font-weight: 863; text-transform: uppercase; word-wrap: break-word">pRODUCTOS</div>
-        <div style="width: 192px; height: 19px; left: 0px; top: 804px; position: absolute; text-align: right; color: #22475C; font-size: 25px; font-family: Roboto Flex; font-weight: 863; text-transform: uppercase; word-wrap: break-word">contacto</div>
+      <a href="#04">  <div style="width: 206px; height: 44px; left: -14px; top: 720px; position: absolute; text-align: right; color: #22475C; font-size: 25px; font-family: Roboto Flex; font-weight: 863; text-transform: uppercase; word-wrap: break-word">NOSOTROS</div> </a>
+      <a href="#05">   <div style="width: 192px; height: 20px; left: 17px; top: 762px; position: absolute; text-align: right; color: #22475C; font-size: 25px; font-family: Roboto Flex; font-weight: 863; text-transform: uppercase; word-wrap: break-word">PRODUCTOS</div> </a>
+      <a href="#06">   <div style="width: 192px; height: 19px; left: 0px; top: 804px; position: absolute; text-align: right; color: #22475C; font-size: 25px; font-family: Roboto Flex; font-weight: 863; text-transform: uppercase; word-wrap: break-word">contacto</div> </a>
         <img style="width: 302px; height: 304px; left: 58px; top: 1166px; position: absolute; border-radius: 182.50px" src="imagenes/circle.jpg" />
-        <div style="width: 277px; height: 44px; left: 70px; top: 1502px; position: absolute; text-align: center"><span style="color: #377170; font-size: 16px; font-family: Roboto; font-weight: 600; word-wrap: break-word">Creamos tu sítio web profesional.<br/></span><span style="color: #377170; font-size: 12px; font-family: Roboto; font-weight: 600; word-wrap: break-word">En todos tus dispositivos, Responsivo.</span></div>
+        <div style="width: 277px; height: 44px; left: 70px; top: 1502px; position: absolute; text-align: center" id="04"><span style="color: #377170; font-size: 16px; font-family: Roboto; font-weight: 600; word-wrap: break-word">Creamos tu sítio web profesional.<br/></span><span style="color: #377170; font-size: 12px; font-family: Roboto; font-weight: 600; word-wrap: break-word">En todos tus dispositivos, Responsivo.</span></div>
         <div style="width: 98px; height: 27px; left: 160px; top: 1557px; position: absolute; background: #D9D9D9"></div>
-        <div style="width: 81px; height: 19px; left: 168px; top: 1565px; position: absolute; text-align: center; color: black; font-size: 10px; font-family: Roboto; font-weight: 600; word-wrap: break-word">Conocer planes</div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> <div style="width: 81px; height: 19px; left: 168px; top: 1565px; position: absolute; text-align: center; color: black; font-size: 10px; font-family: Roboto; font-weight: 600; word-wrap: break-word">Conocer planes</div> </button>
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body" style="width: 90%; height: 90%; position: relative; background: white">
+                    
+                        <div style="width: 430px; height: 289px; left: 0px; top: 0px; position: absolute; background: #D9D9D9"></div>
+                        <div style="width: 430px; height: 289px; left: 0px; top: 289px; position: absolute; background: #22475C"></div>
+                        <div style="width: 430px; height: 305px; left: 0px; top: 578px; position: absolute; background: black"></div>
+                        <img style="width: 59px; height: 59px; left: 183px; top: 96px; position: absolute" src="https://via.placeholder.com/59x59" />
+                        <img style="width: 62px; height: 62px; left: 170px; top: 380px; position: absolute" src="https://via.placeholder.com/62x62" />
+                        <div style="width: 52px; height: 52px; left: 180px; top: 679px; position: absolute; background: white"></div>
+                        <div style="width: 277px; height: 62px; left: 76px; top: 144px; position: absolute; text-align: center"><span style="color: #377170; font-size: 16px; font-family: Roboto; font-weight: 600; word-wrap: break-word"><br/></span><span style="color: #377170; font-size: 12px; font-family: Roboto; font-weight: 600; word-wrap: break-word">Ideal para usuarios que necesitan una página web sin muchas vueltas, funcional y responsiva.</span></div>
+                        <div style="width: 277px; height: 56px; left: 76px; top: 442px; position: absolute; text-align: center"><span style="color: #D9D9D9; font-size: 16px; font-family: Roboto; font-weight: 600; word-wrap: break-word"><br/></span><span style="color: #D9D9D9; font-size: 12px; font-family: Roboto; font-weight: 600; word-wrap: break-word">Pensada para Pymes, negocios en crecimiento.  Te asesoramos para crear tu negocio digital</span></div>
+                        <div style="width: 83px; height: 20px; left: 161px; top: 340px; position: absolute; text-align: center; color: #D9D9D9; font-size: 16px; font-family: Roboto; font-weight: 600; word-wrap: break-word">Toldo<br/></div>
+                        <div style="width: 83px; height: 20px; left: 171px; top: 60px; position: absolute; text-align: center; color: black; font-size: 16px; font-family: Roboto; font-weight: 600; word-wrap: break-word">Winter<br/></div>
+                        <div style="width: 83px; height: 20px; left: 167px; top: 634px; position: absolute; text-align: center; color: #D9D9D9; font-size: 16px; font-family: Roboto; font-weight: 600; word-wrap: break-word">Bully<br/></div>
+                        <div style="width: 277px; height: 44px; left: 67px; top: 731px; position: absolute; text-align: center"><span style="color: #D9D9D9; font-size: 16px; font-family: Roboto; font-weight: 600; word-wrap: break-word"><br/></span><span style="color: #D9D9D9; font-size: 12px; font-family: Roboto; font-weight: 600; word-wrap: break-word">Desarrollamos tu sítio web a medida, <br/>con animaciones, customizaciones personalizadas y propuestas creativas.</span></div>
+                        <div style="width: 98px; height: 27px; left: 164px; top: 206px; position: absolute">
+                            <div style="width: 98px; height: 27px; left: 0px; top: 0px; position: absolute; background: #22475C"></div>
+                            <div style="width: 81px; height: 19px; left: 8px; top: 8px; position: absolute; text-align: center; color: #D9D9D9; font-size: 10px; font-family: Roboto; font-weight: 600; word-wrap: break-word">Detallado</div>
+                        </div>
+                        <div style="width: 98px; height: 27px; left: 161px; top: 504px; position: absolute">
+                            <div style="width: 98px; height: 27px; left: 0px; top: 0px; position: absolute; background: black"></div>
+                            <div style="width: 81px; height: 19px; left: 8px; top: 8px; position: absolute; text-align: center; color: #D9D9D9; font-size: 10px; font-family: Roboto; font-weight: 600; word-wrap: break-word">Detallado</div>
+                        </div>
+                        <div style="width: 98px; height: 27px; left: 161px; top: 810px; position: absolute">
+                            <div style="width: 98px; height: 27px; left: 0px; top: 0px; position: absolute; background: #377170"></div>
+                            <div style="width: 81px; height: 19px; left: 8px; top: 8px; position: absolute; text-align: center; color: #D9D9D9; font-size: 10px; font-family: Roboto; font-weight: 600; word-wrap: break-word">Detallado</div>
+                        </div>
+                    
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
         <div style="width: 418px; height: 883px; left: 460px; top: 883px; position: absolute"></div>
         <div style="width: 313px; height: 16px; left: 113px; top: 883px; position: absolute; background: #377170"></div>
         <div style="width: 418px; height: 893px; left: 0px; top: 1783px; position: absolute; background: #326B6B"></div>
-        <div style="width: 221px; height: 182px; left: 28px; top: 2437px; position: absolute"><span style="color: white; font-size: 16px; font-family: Roboto; font-weight: 600; word-wrap: break-word">Diseño Funcional.<br/></span><span style="color: white; font-size: 12px; font-family: Roboto; font-weight: 600; word-wrap: break-word"><br/>Priorizamos el buen diseño y la funcionalidad en cada proyecto web que emprendemos. Creamos experiencias digitales que no solo cautiven, sino que también funcionen a la perfección en cualquier dispositivo..</span></div>
+        <div style="width: 221px; height: 182px; left: 28px; top: 2437px; position: absolute"><span style="color: white; font-size: 16px; font-family: Roboto; font-weight: 600; word-wrap: break-word" id="05">Diseño Funcional.<br/></span><span style="color: white; font-size: 12px; font-family: Roboto; font-weight: 600; word-wrap: break-word"><br/>Priorizamos el buen diseño y la funcionalidad en cada proyecto web que emprendemos. Creamos experiencias digitales que no solo cautiven, sino que también funcionen a la perfección en cualquier dispositivo..</span></div>
         <img style="width: 215px; height: 432px; left: 132px; top: 1914px; position: absolute" src="imagenes/mobile.png" />
         <div style="width: 419px; height: 889px; left: -1px; top: 2676px; position: absolute; background: #22475C"></div>
         <img style="width: 59px; height: 59px; left: 179px; top: 2985px; position: absolute" src="imagenes/f.png" />
-        <div style="width: 271px; height: 182px; left: 42px; top: 3248px; position: absolute; text-align: justify"><span style="color: white; font-size: 16px; font-family: Roboto; font-weight: 600; word-wrap: break-word">Sobre Nosotros.<br/></span><span style="color: white; font-size: 12px; font-family: Roboto; font-weight: 600; word-wrap: break-word"><br/>Somos una agencia creativa apasionada por la innovación y el diseño. Nos consideramos artesanos de la creatividad, dedicados a romper los límites convencionales y desafiando las normas establecidas. Con un enfoque fresco y vanguardista, nos destacamos por nuestro talento multidisciplinario y nuestra capacidad para pensar de manera creativa y estratégica.</span></div>
+        <div style="width: 271px; height: 182px; left: 42px; top: 3248px; position: absolute; text-align: justify" id="06"><span style="color: white; font-size: 16px; font-family: Roboto; font-weight: 600; word-wrap: break-word">Sobre Nosotros.<br/></span><span style="color: white; font-size: 12px; font-family: Roboto; font-weight: 600; word-wrap: break-word"><br/>Somos una agencia creativa apasionada por la innovación y el diseño. Nos consideramos artesanos de la creatividad, dedicados a romper los límites convencionales y desafiando las normas establecidas. Con un enfoque fresco y vanguardista, nos destacamos por nuestro talento multidisciplinario y nuestra capacidad para pensar de manera creativa y estratégica.</span></div>
         
         <img style="width: 87px; height: 35px; left: 165px; top: 3581px; position: absolute" src="imagenes/logo-ondu.png" />
         <div style="width: 195px; height: 48px; left: 111px; top: 3633px; position: absolute; text-align: center; color: black; font-size: 8px; font-family: Roboto; font-weight: 600; word-wrap: break-word">Desarrollado por Frio Creativos (2020)<br/>Lorem ipsum, <br/>lorem ipsum <br/></div>
     </div>
 
   
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/accion.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/alert.js"></script>
+    <script src="js/loading.js"></script>
     
 </body>
 
