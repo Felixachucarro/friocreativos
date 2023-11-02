@@ -319,28 +319,7 @@ margin-left: 10%;
   }
   
 
-.fondo-subte::before {
-  content: "";
-  position: absolute;
-  top: 30;
-  right: 0;
-  width: 60%;
-  height: 60%;
-  background-image: url('/imagenes/circle.png');
-  background-repeat: no-repeat;
-  background-size: contain; /* Ajusta el tamaño del círculo según sea necesario */
-  animation: rotate 15s linear infinite; /* Rotación gradual durante 10 segundos */
-  z-index: -1; /* Coloca el elemento pseudoelemento detrás del contenido del contenedor */
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  
 
 .fondo-ciudad{
   background-image: url('/imagenes/creativos\ \(7\).png');
@@ -361,6 +340,7 @@ margin-left: 10%;
 @media (max-width: 750px) {
   .texto-inicio h2{
     font-size: 1em;
+    margin-top: 10%;
   }
 }
 
@@ -487,28 +467,7 @@ letter-spacing: 2px;
   }
 }
 
-.loading-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999; /* Asegura que esté en la parte superior */
-}
 
-/* Estilos para la animación de carga */
-.loading-spinner {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 10px solid 478f8e; /* Color del borde */
-  border-top: 4px solid transparent;
-  animation: spin 4s linear infinite;
-}
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
@@ -520,5 +479,42 @@ letter-spacing: 2px;
   filter:grayscale(9);
 }
 
+
+
+.fondo-subte::after {
+  content: "";
+  width: 100%; /* Ancho del pseudo-elemento igual al 100% del contenedor */
+  height: 100%; /* Alto del pseudo-elemento igual al 100% del contenedor */
+  background-image: url(../imagenes/giratotio.png); /* Ruta de la imagen */
+  position: absolute;
+  animation: desplazamiento 20s linear infinite;
+  z-index: -3; /* Ajusta la duración y el tiempo de la animación según tus preferencias */
+}
+
+@keyframes desplazamiento {
+  0% {
+    transform: translateX(100%);
+  opacity: 0; /* Oculta el pseudo-elemento al principio de la animación */
+  display: none; /* Oculta el pseudo-elemento al principio de la animación */
+  visibility: hidden; /* Oculta el pseudo-elemento al principio de la animación */
+  z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+  pointer-events: none; /* Evita que el pseudo-elemento sea interactivo */
+  transition: opacity 0.5s ease; /* Agrega una transición de opacidad para un efecto suave */
+  transform: translateX(0); /* Inicia la animación en su posición normal */
+  opacity: 1; /* Muestra el pseudo-elemento durante la animación */
+  display: block; /* Muestra el pseudo-elemento durante la animación */
+  visibility: visible; /* Muestra el pseudo-elemento durante la animación */
+  pointer-events: auto; /* Restaura la interacción con el pseudo-elemento durante la animación */
+  z-index: -3; /* Restaura la superposición del pseudo-elemento sobre el contenido */
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0; /* Oculta el pseudo-elemento al final de la animación */
+    display: none; /* Oculta el pseudo-elemento al final de la animación */
+    visibility: hidden; /* Oculta el pseudo-elemento al final de la animación */
+    z-index: -3; /* Coloca el pseudo-elemento detrás del contenido */
+    pointer-events: none; /* Evita que el pseudo-elemento sea interactivo */
+  }
+}
 
 
