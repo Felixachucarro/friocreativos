@@ -518,3 +518,26 @@ letter-spacing: 2px;
 }
 
 
+.redes-flotante{
+  position: fixed;
+  z-index: 20;
+  bottom: 5%;
+  right: 5%;
+}
+
+.red img{
+  width: 60px;
+  height: auto;
+  margin: 2%
+
+}
+
+.red img:hover{
+  transition: ease-in 0.2s;
+  filter:brightness(2);
+}
+
+.bd-footer{
+  background-image: url(../imagenes/giratotio.png);
+  background-size: cover;
+}
