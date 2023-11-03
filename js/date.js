@@ -1,4 +1,4 @@
-import { initializeApp } from 'firebase/app';
+
 
 
 // Inicializa Firebase con tu configuración
@@ -42,7 +42,7 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
     const services = document.getElementById("services").value;
 
     // Accede a Firestore de Firebase
-    const db = firebase.firestore();
+
 
     // Crea un objeto con los datos del formulario
     const formData = {
