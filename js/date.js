@@ -12,29 +12,43 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 
-// Agrega un manejador de eventos para el envío del formulario
-const form = document.getElementById("contact-form");
+// Agrega un manejador de eventos cuando se envía el formulario
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Evita que el formulario se envíe de manera predeterminada
 
-form.addEventListener("submit", function (e) {
-    e.preventDefault();
+    // Obtén los valores de los campos del formulario
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const whatsapp = document.getElementById("whatsapp").value;
+    const help = document.getElementById("help").value;
+    const instagram = document.getElementById("instagram").value;
+    const investmentRange = document.getElementById("investment-range").value;
+    const services = document.getElementById("services").value;
 
-    const name = form.name.value;
-    const email = form.email.value;
-    const message = form.message.value;
+    // Accede a Firestore de Firebase
+    const db = firebase.firestore();
 
-    // Guarda los datos en Firestore
-    db.collection("contact-form").add({
+    // Crea un objeto con los datos del formulario
+    const formData = {
         name: name,
         email: email,
-        message: message
-    })
-    .then(function(docRef) {
-        console.log("Datos guardados con ID: ", docRef.id);
-        alert("Mensaje enviado con éxito");
-        form.reset();
-    })
-    .catch(function(error) {
-        console.error("Error al guardar datos: ", error);
-        alert("Ocurrió un error al enviar el mensaje. Por favor, inténtalo de nuevo.");
-    });
+        whatsapp: whatsapp,
+        help: help,
+        instagram: instagram,
+        investmentRange: investmentRange,
+        services: services
+    };
+
+    // Guarda los datos en Firestore
+    db.collection("contact-form").add(formData)
+        .then(function (docRef) {
+            console.log("Datos guardados con ID: ", docRef.id);
+            alert("Mensaje enviado con éxito");
+            document.getElementById("contact-form").reset(); // Reinicia el formulario después del envío
+        })
+        .catch(function (error) {
+            console.error("Error al guardar datos: ", error);
+            alert("Ocurrió un error al enviar el mensaje. Por favor, inténtalo de nuevo.");
+        });
 });
+</script>
