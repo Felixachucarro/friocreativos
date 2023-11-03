@@ -1,4 +1,6 @@
 // Inicializa Firebase con tu configuración
+const app = initializeApp(firebaseConfig);
+
 const firebaseConfig = {
     apiKey: "AIzaSyBVg9vvfDrnZRgiJDZiZ-apzRSjNxh3RBU",
     authDomain: "frio-creativos.firebaseapp.com",
