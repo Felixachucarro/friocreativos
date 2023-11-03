@@ -51,4 +51,3 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
             alert("Ocurrió un error al enviar el mensaje. Por favor, inténtalo de nuevo.");
         });
 });
-</script>
