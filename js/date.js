@@ -1,7 +1,5 @@
-// Inicializa Firebase con tu configuración
-
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js";
+import { initializeApp } from 'firebase/app';
+import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
     apiKey: "AIzaSyBVg9vvfDrnZRgiJDZiZ-apzRSjNxh3RBU",
@@ -11,7 +9,9 @@ const firebaseConfig = {
     messagingSenderId: "615296536631",
     appId: "1:615296536631:web:5d7ae00bf2635c78d4efb2",
     measurementId: "G-E42XGEF7L3"
-  };
+};
+
+
   
   // Inicializa Firebase
   firebase.initializeApp(firebaseConfig);
