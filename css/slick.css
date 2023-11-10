@@ -1,0 +1,137 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  
+    background: transparent;  
+}
+
+/* ::-webkit-scrollbar-thumb {
+    background: #FF0000;
+} */
+
+body{
+  
+}
+#wrapper{
+/*   border:1px solid blue; */
+  background:black;
+  width:900px;
+  height:560px;
+  margin:1em auto;
+}
+
+/*
+  SLIDER-FOR IMAGE
+*/
+h4:nth-of-type(1){
+  transform:translateY(-30px);
+  width:145px;
+  margin-bottom:-27px;
+  padding-bottom:0;
+/*   border:solid 1px red; */
+}
+.slider-for{
+/*   border:solid 1px red; */
+  width: 1000px;
+  height:370px;
+/*   overflow:hidden; */
+}
+.slider-for div{
+  height:370px;
+  
+  
+}
+.slider-for div img{
+  height:100%;
+  width:100%;
+  width: 900px;
+  border-radius: 20px;
+
+}
+.relative{
+  position:relative;
+  
+}
+
+.relative img{
+    
+}
+.absolute{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  background:linear-gradient(to right,black 25%,transparent);
+}
+h2{
+  color:white;
+}
+.absolute .flex{
+  display:flex;
+  align-items:baseline;
+/*   border:solid 1px red; */
+  width:190px;
+  padding-bottom:0;
+  margin-bottom:0;
+  height:40px;
+}
+.fa-star{
+  color:red;
+}
+/* .fa-star:nth-of-type(5){
+  color:white;
+} */
+.flex h6:nth-of-type(1){
+  margin-left:5px;
+  margin-right:10px;
+  color:white;
+}
+.flex h6:nth-of-type(2){
+  background:grey;
+  color:white;
+  font-weight:bold;
+  text-align:center;
+  width:45px;
+  padding:2px;
+}
+p{
+  color:white;
+/*   border:solid 1px red; */
+  width:300px;
+}
+.absolute .box{
+/*   border:solid 1px red; */
+  margin-left:25px;
+  margin-top:60px;
+  width:300px;
+  height:200px;
+}
+/*
+  SLIDER NAV IMAGES
+*/
+.slider-nav img:focus{
+  outline-color:red;
+  outline-width:1px;
+}
+.slider-nav{
+  margin:0 3px;
+}
+.slider-nav img{
+  width: 250px;  
+  height:auto;
+/*   border:solid 1px red; */
+  padding:0 1px;
+/*   margin-bottom:5px; */
+}
+.slider-nav img:hover{
+    cursor: pointer;
+    filter: grayscale(9);
+    transition: 0.3s;
+}
+
+h4{
+  color:white;
+  margin-left:5px;
+}
