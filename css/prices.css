@@ -17,4 +17,27 @@
 
 .card .card-body .card-text p{
     font-size: 2px!important;
+
 }
+
+.img-card img{
+    border-radius: 10px;
+    width: 90%;
+    border: 1px solid;
+}
+
+.img-card img:hover {
+    
+   
+     /* Modificado el box-shadow */
+     
+}
+
+.rojo{
+    background-color: #478f8e;
+}
+
+.mt-20{
+    margin-top: 20%;
+}
+
