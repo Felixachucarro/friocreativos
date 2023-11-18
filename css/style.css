@@ -586,11 +586,14 @@ letter-spacing: 2px;
   border-radius: 20px;
   height: 400px;
   object-fit: cover;
+  
+ 
 }
 
 .mockup:hover{
   filter: opacity(6);
   transition: 0.3s;
   border: 1px solid rgb(92, 92, 92);
-  object-fit: cover;
+  
+  
 }
