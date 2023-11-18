@@ -299,7 +299,7 @@ margin-left: 10%;
 
 
 .fondo-subte{
-  background-image: url('/imagenes/FRIO.png');
+  background-image: url('/imagenes/frio.webp');
   background-size: cover;
   background-repeat: no-repeat;
   height: 700px;
@@ -568,4 +568,29 @@ letter-spacing: 2px;
 
 .card-footer{
   border: none;
+}
+
+.marcas img{
+  border-radius: 10px;
+  border: 1px solid rgb(255, 226, 226);
+}
+
+.marcas img:hover{
+  filter:grayscale(9);
+  transition: 0.9s;
+  border: 1px solid rgb(119, 119, 119);
+}
+
+.mockup{
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 20px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.mockup:hover{
+  filter: opacity(6);
+  transition: 0.3s;
+  border: 1px solid rgb(92, 92, 92);
+  object-fit: cover;
 }
