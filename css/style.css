@@ -600,8 +600,9 @@ letter-spacing: 2px;
 
 .fondo-bauhaus{
   background-image: url(../imagenes/fd.svg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  height: 90vh;
 }
 
 .flotar{
@@ -616,7 +617,7 @@ letter-spacing: 2px;
   position: absolute;
   right: 50%;
   top: 120%;
-  width: 80vh;
+  
   z-index: 1;
 }
 
@@ -669,5 +670,12 @@ letter-spacing: 2px;
     top: 200%;
     width: 60vw;
     left: 10%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  
+  #texto-inicio-01 {
+    margin-top: 5%;
   }
 }
