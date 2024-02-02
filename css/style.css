@@ -597,3 +597,47 @@ letter-spacing: 2px;
   
   
 }
+
+.fondo-bauhaus{
+  background-image: url(../imagenes/fd.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.flotar{
+  z-index: 3;
+  position: absolute;
+  width: 300px;
+  left: 30%;
+}
+
+.abso{
+  position: absolute;
+  right: 50%;
+  top: 110%;
+  width: 600px;
+  z-index: 1;
+}
+
+#circle-2 {
+  position: absolute;
+  right: 50%;
+  animation: rotate 15s linear infinite;
+  width: 450px;
+  top: 120%;
+  filter:contrast(2);
+  z-index: 2;
+  
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg); /* Rotación inicial de 0 grados */
+  }
+  to {
+      transform: rotate(360deg); /* Rotación final de 360 grados (una vuelta completa) */
+  }
+}
+
+
+

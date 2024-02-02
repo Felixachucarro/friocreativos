@@ -100,16 +100,32 @@
     
     <hr>
 
-    <div class="container mt-10 mb-4 " id="02" style="margin-bottom: 10%!important;">
+    <div class="container mt-10 mb-4 fondo-bauhaus"  style="margin-bottom: 10%!important; height: 100vh;">
       
       <div class="row">
 
-        <div class="col-md-4">
-            <div class="m-2 ml-10">
-            <img src="imagenes/circle.webp" class="img-fluid" alt="patron de imagenes que funciona como fondo" style="border-radius: 50% 50% 50% 50%;">
-            </div>
+        <div class="d-flex landing col-md-6">
+          <img src="imagenes/web.png" alt="Imagen 1" class="image abso">
+          <img src="imagenes/circle-2.png" alt="Imagen 2" class="image" id="circle-2">
+          <img src="imagenes/image 2.png" alt="Imagen 3" class="image flotar">
         </div>
+        
+
+        
        
+            <script>
+
+              var img = document.querySelector('.flotar');
+              var x = 0;
+              var y = 0;
+              var amplitude = 50;
+
+              setInterval(function() {
+                  x += 0.03;
+                  y = Math.sin(x) * amplitude;
+                  img.style.transform = 'translateY(' + y + 'px)';
+              }, 50);
+            </script>
        
         <div class="col-md-6 col-lg-6" id="01">
             <div class="p-4 ml-10" style="text-align: end;">
@@ -119,7 +135,7 @@
                      sitio web Profesional
                 </h2>
                 
-                <h6 style="font-weight: 300;">En todos tus dispositivos, <b>Responsivo.</b></h6>
+                <h4 style="font-weight: 300;">En todos tus dispositivos, <b>Responsivo.</b></h4>
 
                 <div class="mt-4 ml-2">
                   <a href="prueba.html">
@@ -140,7 +156,7 @@
    
     <hr>
     
-    <div class="container row mt-10 mb-10 w-100">
+    <div class=" row mt-10 mb-10 w-100">
         <div class="col-md-3 col-sm-3 ">
             <div class="texto-inicio">
                 <h2 style="font-size: larger;">01</h2>
@@ -148,8 +164,8 @@
                     Diseño
                 Funcional
                 </h2>
-                <h6 style="font-size: smaller; margin-top: 3%;">Priorizamos el buen diseño y la funcionalidad en cada proyecto web que emprendemos.  Creamos experiencias digitales que no solo cautiven, sino que también funcionen a la perfección en cualquier dispositivo. <br>
-                   </h6>
+                <h6 style=" margin-top: 3%;">Priorizamos el buen diseño y la funcionalidad en cada proyecto web que emprendemos.  Creamos experiencias digitales que no solo cautiven, sino que también funcionen a la perfección en cualquier dispositivo. <br>
+                   </h5>
 
                
             </div>
@@ -158,9 +174,11 @@
             <img src="imagenes/A-01.png" alt="imagen-descriptiva-mockup" srcset="" class="img-fluid ho">
         </div>
         
-        <div class="col-md-6 col-sm-12 mt-4">
+        <div class="col-md-6 col-sm-4 mt-4">
             <img src="imagenes/A-02.png" alt="imagen-descriptiva-mockup" srcset="" class="img-fluid ho">
         </div>
+
+        
 
         
 
