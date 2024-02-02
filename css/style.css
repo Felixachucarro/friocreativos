@@ -607,16 +607,22 @@ letter-spacing: 2px;
 .flotar{
   z-index: 3;
   position: absolute;
-  width: 300px;
-  left: 30%;
+  width: 30vh;
+  left: 35%;
+  top: 140%;
 }
 
 .abso{
   position: absolute;
   right: 50%;
-  top: 110%;
-  width: 600px;
+  top: 120%;
+  width: 80vh;
   z-index: 1;
+}
+
+.abso:hover{
+  transition: ease-in-out 1s;
+  scale: 0.9;
 }
 
 #circle-2 {
@@ -624,9 +630,10 @@ letter-spacing: 2px;
   right: 50%;
   animation: rotate 15s linear infinite;
   width: 450px;
-  top: 120%;
+  top: 130%;
   filter:contrast(2);
   z-index: 2;
+  mix-blend-mode: multiply;
   
 }
 
@@ -641,3 +648,26 @@ letter-spacing: 2px;
 
 
 
+@media only screen and (max-width: 900px) {
+  
+  .flotar {
+    top: 200%;
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  /* Estilos específicos para pantallas de celular */
+  .abso {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  
+  #circle-2 {
+    top: 200%;
+    width: 60vw;
+    left: 10%;
+  }
+}
