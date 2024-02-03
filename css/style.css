@@ -617,7 +617,7 @@ letter-spacing: 2px;
   position: absolute;
   right: 50%;
   top: 120%;
-  
+  width: 70vh;
   z-index: 1;
 }
 
