@@ -1,3 +1,11 @@
+:root{
+  --frio-azul-oscuro:  #193232;
+  --frio-azul:  #2C5757;
+  --frio-creativos: #3B7474;
+  --rojo-frio: #C74A30;
+  --amarillo-frio: #C2B064;
+}
+
 html{
   scroll-behavior: smooth;
   
@@ -35,6 +43,7 @@ a:hover{
     height: 100%;
     object-fit: cover;
     z-index: -6;
+    
   }
 
   .container h1{
@@ -613,6 +622,12 @@ letter-spacing: 2px;
   top: 140%;
 }
 
+.flotar:hover{
+  transition: ease-in-out 1s;
+  scale: 1.1;
+}
+
+
 .abso{
   position: absolute;
   right: 50%;
@@ -630,8 +645,8 @@ letter-spacing: 2px;
   position: absolute;
   right: 50%;
   animation: rotate 15s linear infinite;
-  width: 450px;
-  top: 130%;
+  width: 20vw;
+  top: 135%;
   filter:contrast(2);
   z-index: 2;
   mix-blend-mode: multiply;
@@ -679,3 +694,5 @@ letter-spacing: 2px;
     margin-top: 5%;
   }
 }
+
+
