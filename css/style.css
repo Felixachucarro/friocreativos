@@ -13,7 +13,7 @@ html{
 }
 
 h1,h2,h3,h4,h5,h6,p{
-    font-family: 'Roboto', bold;
+  font-family: "Montserrat", sans-serif;
 }
 
 a{
@@ -308,7 +308,7 @@ margin-left: 10%;
 
 
 .fondo-subte{
-  background-image: url('/imagenes/FRIO.png');
+  background-image: url('https://i.ibb.co/QrgPv4T/retrato-chico-guapo-despreocupado-complacido-pelo-corto-oscuro-camisa.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -695,4 +695,11 @@ letter-spacing: 2px;
   }
 }
 
+
+.card-img-top{
+  object-fit: cover;
+  max-width: 300px!important;
+  height: 250px !important;
+  padding: 1%;
+}
 
