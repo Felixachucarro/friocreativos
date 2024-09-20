@@ -504,9 +504,9 @@ margin-left: 10%;
 
 .fondo-subte::after {
   content: "";
-  width: 100%; /* Ancho del pseudo-elemento igual al 100% del contenedor */
-  height: 100%; /* Alto del pseudo-elemento igual al 100% del contenedor */
-  background-image: url(https://i.ibb.co/qkzdSc3/giratotio.png); /* Ruta de la imagen */
+  width: 150%; /* Ancho del pseudo-elemento igual al 100% del contenedor */
+  height: 150%; /* Alto del pseudo-elemento igual al 100% del contenedor */
+  background-image: url(https://i.ibb.co/x5Gn3HW/Frame1-1.png); /* Ruta de la imagen */
   position: absolute;
   animation: desplazamiento 20s linear infinite;
   z-index: -3; /* Ajusta la duración y el tiempo de la animación según tus preferencias */
