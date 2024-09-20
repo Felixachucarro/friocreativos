@@ -325,6 +325,23 @@ margin-left: 10%;
   
 
   
+.fondo-subte-2{
+  background-image: url('https://i.ibb.co/CB4VfrV/header.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  border-bottom: 15px solid #478F8E;
+
+}
+
+@media (max-width: 992px){
+  .fondo-subte-2{
+      background-size: cover;
+      background-position-x: -6%;
+  }
+  }
+  
+
 
 .fondo-ciudad{
   background-image: url('/imagenes/creativos\ \(7\).png');
@@ -504,12 +521,22 @@ margin-left: 10%;
 
 .fondo-subte::after {
   content: "";
-  width: 150%; /* Ancho del pseudo-elemento igual al 100% del contenedor */
-  height: 150%; /* Alto del pseudo-elemento igual al 100% del contenedor */
-  background-image: url(https://i.ibb.co/x5Gn3HW/Frame1-1.png); /* Ruta de la imagen */
+  width: 100%; /* Ancho del pseudo-elemento igual al 100% del contenedor */
+  height: 100%; /* Alto del pseudo-elemento igual al 100% del contenedor */
+  background-image: url(https://i.ibb.co/KVC2bgQ/fondo.png); /* Ruta de la imagen */
   position: absolute;
-  animation: desplazamiento 20s linear infinite;
+  animation: desplazamiento 25s linear infinite;
   z-index: -3; /* Ajusta la duración y el tiempo de la animación según tus preferencias */
+}
+
+.fondo-subte-2::before {
+  content: "";
+  width: 150%; /* Ancho del pseudo-elemento igual al 100% del contenedor */
+  height: 100%; /* Alto del pseudo-elemento igual al 100% del contenedor */
+  background-image: url(https://i.ibb.co/PDVb9KR/fondo-delante.png); /* Ruta de la imagen */
+  position: absolute;
+  animation: desplazamiento2 40s linear infinite;
+  z-index: 100!important; /* Ajusta la duración y el tiempo de la animación según tus preferencias */
 }
 
 @keyframes desplazamiento {
@@ -538,7 +565,31 @@ margin-left: 10%;
   }
 }
 
-
+@keyframes desplazamiento2 {
+  0% {
+    transform: translateX(100%);
+  
+  display: none; /* Oculta el pseudo-elemento al principio de la animación */
+  visibility: hidden; /* Oculta el pseudo-elemento al principio de la animación */
+  z-index: 1; /* Coloca el pseudo-elemento detrás del contenido */
+  pointer-events: none; /* Evita que el pseudo-elemento sea interactivo */
+  
+  transform: translateX(0); /* Inicia la animación en su posición normal */
+  
+  display: block; /* Muestra el pseudo-elemento durante la animación */
+  visibility: visible; /* Muestra el pseudo-elemento durante la animación */
+  pointer-events: auto; /* Restaura la interacción con el pseudo-elemento durante la animación */
+  z-index: -3; /* Restaura la superposición del pseudo-elemento sobre el contenido */
+  }
+  100% {
+    transform: translateX(-100%);
+    
+    display: none; /* Oculta el pseudo-elemento al final de la animación */
+    visibility: hidden; /* Oculta el pseudo-elemento al final de la animación */
+    z-index: -3; /* Coloca el pseudo-elemento detrás del contenido */
+    pointer-events: none; /* Evita que el pseudo-elemento sea interactivo */
+  }
+}
 .redes-flotante{
   position: fixed;
   z-index: 20;
